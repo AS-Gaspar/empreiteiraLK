@@ -1,0 +1,48 @@
+@media (min-width: 992px) { 
+
+    /* Header & Navbar */
+    header {
+        justify-content: flex-start;
+    }
+
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu-burguer {
+        display: none;
+    }
+
+    .navbar {
+        position: static;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: auto;
+        width: auto;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        gap: 20px;
+        transition: none; 
+    }
+
+    .navbar a {
+        margin: 0;
+    }
+
+    .close-button {
+        display: none;
+    }
+
+    /* Apresentação */
+    #apresentacao h2 {
+        font-size: 3rem; /* Aumenta o tamanho do título */
+    }
+
+    #apresentacao p {
+        font-size: 1.2rem; 
+    }
+
+   
+}

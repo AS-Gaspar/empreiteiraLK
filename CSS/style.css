@@ -21,92 +21,59 @@ body {
     background-color: var(--quaternary);
 }
 
-/* Header */
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background-color: var(--primary);
-    z-index: 10;
-    color: var(--quaternary);
-    box-shadow: 0 4px 6px rgba(0, 0,0, 0.1);
-}
-
-/* NavBar */
-
-.logo {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-}
-
-.logo img {
-    max-height: 50px;
-    width: auto;
-}
-
-.menu-burguer {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.menu-burguer div {
-    width: 25px;
-    height: 3px;
-    background-color: var(--quaternary);
-}
-
-.navbar {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    height: 100vh;
-    width: 45vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: var(--primary);
+/* Apresentação */
+#apresentacao {
+    margin-top: calc(5rem + 1rem);
     padding: 20px;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-    transition: right 0.5s ease;
-} 
-
-.navbar.active {
-    right: 0;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: var(--quaternary);
+    background-color: var(--secondary);
     text-align: center;
-    font-size: 1.2em;
 }
 
-.navbar a:hover {
+#apresentacao .conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 1000px;
+    margin: 0 auto 20px;
+    padding: 0 5%; 
+}
+
+#apresentacao h2 {
+    color: var(--primary);
+    font-size: 2rem;
+    margin: 0;
+}
+
+#apresentacao p {
     color: var(--quinary);
-    transition: 0.2s;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 20px;
 }
 
-.close-button {
+.video-container {
+    position: relative;
+    width: 90%; 
+    margin: 0 auto;
+    padding-top: 56.25%; /* Proporção 16:9 (altura/largura = 9/16 = 0.5625 ou 56.25%) */
+    border: 7px solid var(--primary);
+    box-sizing: border-box;
+}
+
+.video-container iframe {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    color: var(--quaternary);
-    font-size: 2em;
-    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
-/* Conheça a Empresa */
+/* Carossel
+
 .apresentacao {
     position: relative;
     margin-top: 70px;
@@ -135,10 +102,10 @@ header {
 
 .texto {
     position: absolute;
-    top: 20%;
+    top: 40%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(42, 59, 143, 0.7);
+    background-color: rgba(0, 0, 0, 0.671);
     color: var(--quaternary);
     padding: 10px 20px;
     border-radius: 5px;
@@ -171,58 +138,7 @@ header {
 .navegacao button:hover {
     background-color: var(--primary);
 }
-    
-
-/* Form */
-
+*/
 
 /* Footer */
 
-
-@media (min-width: 992px) { 
-
-    /* Header & Navbar */
-    header {
-        justify-content: flex-start;
-    }
-
-    .logo {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .menu-burguer {
-        display: none;
-    }
-
-    .navbar {
-        position: static;
-        flex-direction: row;
-        justify-content: flex-start;
-        height: auto;
-        width: auto;
-        background: none;
-        box-shadow: none;
-        padding: 0;
-        gap: 20px;
-        transition: none; 
-    }
-
-    .navbar a {
-        margin: 0;
-    }
-
-    .close-button {
-        display: none;
-    }
-
-    /* Conheça a Empresa */
-    .texto {
-        font-size: 1rem;
-    }
-
-    .navegacao button {
-        font-size: 1.5rem;
-        padding: 8px;
-    }
-}
