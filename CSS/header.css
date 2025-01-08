@@ -30,6 +30,10 @@ header {
     width: auto;
 }
 
+.logo-media {
+    display: none;
+}
+
 .menu-burguer {
     display: flex;
     flex-direction: column;

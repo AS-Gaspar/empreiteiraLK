@@ -2,12 +2,18 @@
 
     /* Header & Navbar */
     header {
-        justify-content: flex-start;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
-    .logo {
-        margin-left: auto;
-        margin-right: auto;
+    .hidden-logo img {
+        display: none;
+    }
+
+    .logo-media {
+        display: inline;
     }
 
     .menu-burguer {
@@ -16,8 +22,11 @@
 
     .navbar {
         position: static;
+        flex: 1;
+        display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: space-evenly;
+        align-items: center;
         height: auto;
         width: auto;
         background: none;
@@ -25,16 +34,6 @@
         padding: 0;
         gap: 20px;
         transition: none; 
-    }
-
-    .navbar-left {
-        display: flex;
-        gap: 20px;
-    }
-
-    .navbar-right {
-        display: flex;
-        gap: 20px;
     }
 
     .navbar a {
@@ -47,12 +46,21 @@
 
     /* Apresentação */
     #apresentacao h2 {
-        font-size: 3rem; /* Aumenta o tamanho do título */
+        font-size: 3rem; 
     }
 
     #apresentacao p {
         font-size: 1.2rem; 
     }
 
+    /* Cards */
+    .cards-container {
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+    }
+
+    .carrossel-navegacao {
+        display: none;
+    }
    
 }
