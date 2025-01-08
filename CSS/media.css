@@ -27,6 +27,16 @@
         transition: none; 
     }
 
+    .navbar-left {
+        display: flex;
+        gap: 20px;
+    }
+
+    .navbar-right {
+        display: flex;
+        gap: 20px;
+    }
+
     .navbar a {
         margin: 0;
     }
