@@ -1,92 +1,88 @@
-#cards {
-    padding: 40px 20px;
-    background-color: var(--secondary);
+#obras {
+    margin-top: 2rem;
+    padding: 20px;
     text-align: center;
+    background-color: var(--secondary);
 }
 
-#cards h2 {
+#obras h2 {
     color: var(--primary);
     margin-bottom: 20px;
 }
 
+@media (max-width: 992px) {
+.carrossel-container {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: var(--quaternary);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .cards-container {
-    display: grid;
-    gap: 20px;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
 }
 
 .card {
-    background-color: var(--quaternary);
+    flex: 0 0 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background: var(--quaternary);
     border: 1px solid var(--tertiary);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 10px;
-    overflow: hidden;
+    border-radius: 8px;
 }
 
-.card img {
+.card .logo {
+    width: 50%;
+}
+
+.card .photo {
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
-.card button {
-    background-color: var(--primary);
+.card .saiba-mais {
+    padding: 10px 20px;
+    background: var(--primary);
     color: var(--quaternary);
     border: none;
-    padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s;
 }
 
-.card button:hover {
-    background-color: var(--tertiary);
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--primary);
+    color: var(--quaternary);
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 992px) {
-    .cards-container {
-        display: flex;
-        width: 100%;
-        overflow-x: hidden;
-        scroll-behavior: smooth;
-        transition: transform 0.5s ease-in-out;
-    }
-
-    .card {
-        flex: 0 0 100%;
-    }
-
-    .carrossel-navegacao {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .btn-prev, .btn-next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: var(--primary);
-        color: var(--quaternary);
-        border: none;
-        padding: 10px 15px;
-        cursor: pointer;
-        border-radius: 5px;
-        z-index: 10;
-        transition: background-color 0.3s;
-    }
-
-    .btn-prev {
-        left: 10px;
-    }
-
-    .btn-next {
-        right: 10px;
-    }
-
-    .btn-prev:hover, .btn-next:hover {
-        background-color: var(--tertiary);
-    }
+button.prev {
+    left: 10px;
 }
+
+button.next {
+    right: 10px;
+}
+

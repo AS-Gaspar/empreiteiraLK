@@ -55,12 +55,20 @@
 
     /* Cards */
     .cards-container {
+        display: grid;
         grid-template-columns: repeat(4, 1fr);
-        justify-items: center;
+        gap: 20px;
+        width: 100%;
+        margin: 0 auto;
     }
 
-    .carrossel-navegacao {
+    button.prev, button.next {
         display: none;
+    }
+
+    .card {
+        flex: unset;
+        max-width: unset;
     }
    
 }
