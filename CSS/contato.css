@@ -1,0 +1,22 @@
+
+.contact-info {
+    background-color: var(--primary);
+    padding-top: 2rem !important;
+    padding: 0 1rem 0 1rem;
+    margin: 0 !important;
+    max-width: 100% !important;
+    box-shadow: 1 1 2 var(--quinary);
+    margin-top: 1rem !important; 
+    color: var(--quinary);
+}
+
+.btn-secondary {
+    background-image: linear-gradient(45deg, #833AB4,  #FD1D1D, #fcaa45);
+}
+
+.contact-info h2 {
+    margin-bottom: 0.8rem !important;
+}
+
+
+

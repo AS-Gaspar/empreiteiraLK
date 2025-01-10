@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empreiteira LK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="imgs/Elias-site.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/media.css">
     <link rel="stylesheet" href="CSS/apresentacao.css">
     <link rel="stylesheet" href="CSS/cards.css">
+    <link rel="stylesheet" href="CSS/contato.css">
+    <link rel="stylesheet" href="CSS/footer.css">
 </head>
 <body>
     <!-- Inicio -->
@@ -86,12 +89,52 @@
         </div>
     </section>    
 
+    <!-- Contato -->
+    <section class="container py-5 contact-info">
+        <div class="row">
+            <!-- Informações de Contato -->
+            <div class="col-lg-5 mb-4">
+                <h2 class="mb-4">Deseja adquirir nossa mão de obra?</h2>
+                <h2 class="mb-4">Entre em contato!</h2>
+                <p><strong>Endereço:</strong> Rua Exemplo, 123, São Paulo, SP</p>
+                <p><strong>Telefone:</strong> (11) 1234-5678</p>
+                <p><strong>E-mail:</strong> contato@construtora.com</p>
+                <div>
+                    <a href="#" class="btn btn-primary me-2"><i class="bi bi-facebook"></i> Facebook</a>
+                    <a href="#" class="btn btn-secondary"><i class="bi bi-instagram"></i> Instagram</a>
+                </div>
+            </div>
+
+            <!-- Formulário de Contato -->
+            <div class="col-lg-7">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
-
+        <div class="footer-bottom">
+            &copy; Empreiteira LK | Designed by <a href=https://www.linkedin.com/in/alexandre-silvestri-2a94ab318 target="_blank">Alexandre Silvestri</a>
+          </div>
     </footer>
     
     <script src="JS/header.js"></script>
     <script src="JS/cards.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

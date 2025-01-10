@@ -1,0 +1,6 @@
+.footer-bottom {
+    background-color: var(--senary);
+    color: var(--quinary);
+    padding: 0.5rem;
+    text-align: center;
+}

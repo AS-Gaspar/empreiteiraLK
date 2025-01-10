@@ -6,84 +6,16 @@
 
 :root {
     --primary: #2A3B8F; /* Azul Eclesiástico */
-    --secondary: #F2F2F2; /* Cinza claro */
-    --tertiary: #E5E5E5; /* Cinza escuro */
-    --quaternary: #FFFFFF; /* Branco */
-    --quinary: #000000; /* Preto */
+    --secondary: #e18c5a; /* Laranja */
+    --tertiary: #F2F2F2; /* Cinza claro */
+    --quaternary: #E5E5E5; /* Cinza escuro */
+    --quinary: #FFFFFF; /* Branco */
+    --senary: #000000; /* Preto */
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--secondary);
+    background-color: var(--terthiary);
 }
 
-/* Carossel
-
-.apresentacao {
-    position: relative;
-    margin-top: 70px;
-    height: calc(100vw * 9 / 16);
-    overflow: hidden;
-}
-
-.carrossel {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    transition: transform 1s ease-in-out;
-}
-
-.slide {
-    flex: 0 0 100%;
-    position: relative;
-    object-fit: cover;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.texto {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.671);
-    color: var(--quaternary);
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.navegacao {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 5;
-}
-
-.navegacao button {
-    background-color: rgba(0, 0, 0, 0.562);
-    border: none;
-    color: var(--quaternary);
-    font-size: 1rem;
-    padding: 8px;
-    margin: 5px;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-}
-
-.navegacao button:hover {
-    background-color: var(--primary);
-}
-*/
-
-/* Footer */
 
