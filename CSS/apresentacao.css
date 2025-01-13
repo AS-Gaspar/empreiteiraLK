@@ -32,7 +32,8 @@
 
 .video-container {
     position: relative;
-    width: 90%; 
+    max-width: 1280px;
+    max-height: 720px;
     margin: 0 auto;
     padding-top: 56.25%; /* Proporção 16:9 (altura/largura = 9/16 = 0.5625 ou 56.25%) */
     border: 7px solid var(--primary);
