@@ -15,7 +15,7 @@ function scrollToTop() {
 }
 
 function scrollToSection(section) {
-    section.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 
 inicioButton.addEventListener('click', (event) => {
@@ -25,7 +25,7 @@ inicioButton.addEventListener('click', (event) => {
 
 empresaButton.addEventListener('click', (event) => {
     event.preventDefault()
-    scrollToSection(empresaSection)
+    scrollToTop(empresaSection)
 })
 
 obrasButton.addEventListener('click', (event) => {
