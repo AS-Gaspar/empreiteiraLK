@@ -1,12 +1,11 @@
 .whatsapp-button {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 25px;
+    right: 20px;
     width: 70px;
     height: 70px;
     z-index: 1000;
     border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
