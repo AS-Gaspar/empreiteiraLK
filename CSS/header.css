@@ -79,7 +79,7 @@ header {
 }
 
 .navbar a:hover {
-    color: var(--senary);
+    scale: 1.2; 
     transition: 0.2s;
 }
 
