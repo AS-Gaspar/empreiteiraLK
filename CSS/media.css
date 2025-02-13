@@ -34,11 +34,7 @@
         padding: 0;
         gap: 20px;
         transition: none; 
-    }
-
-    .navbar a {
-        margin: 0;
-    }
+    } 
 
     .close-button {
         display: none;
