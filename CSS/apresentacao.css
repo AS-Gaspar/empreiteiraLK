@@ -30,9 +30,10 @@
     padding-bottom: 20px;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
 
     .video-container {
-        margin: 150px;
+        width: 70%;
+        margin: auto;
     }
 }
