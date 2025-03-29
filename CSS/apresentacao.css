@@ -30,18 +30,10 @@
     padding-bottom: 20px;
 }
 
-<<<<<<< HEAD
 @media (min-width: 1200px) {
 
     .video-container {
         width: 70%;
-=======
-@media (min-width: 800px) {
-
-    .video-container {
-        margin: 15px;
-        max-width: 950px;
->>>>>>> 30029e6e60af0470a24e11e721c80cc5c8944d3c
         margin: auto;
     }
 }

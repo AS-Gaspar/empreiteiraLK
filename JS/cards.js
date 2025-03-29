@@ -7,9 +7,9 @@ let currentIndex = 0
 const updateCarousel = () => {
     const cardWidth = cardsContainer.firstElementChild.getBoundingClientRect().width
     if (window.innerWidth < 992) {
-    cardsContainer.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    cardsContainer.style.transform = `translateX(-${currentIndex * cardWidth}px)`
     } else {
-        cardsContainer.style.transform = `translateX(0px)`;
+        cardsContainer.style.transform = `translateX(0px)`
     }
 }
 
