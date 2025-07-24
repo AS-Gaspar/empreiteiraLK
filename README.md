@@ -1,5 +1,7 @@
 # 🏗️ Empreiteira LK — Site Institucional
 
+# Acesse o site por aqui -> [https://empreiteiralk.site/](Link)  
+
 ## 📌 Propósito do Projeto
 
 Este é o primeiro projeto real desenvolvido com HTML, CSS e JavaScript puros, com o objetivo de criar um site institucional para a **Empreiteira LK**. O site visa apresentar a empresa, exibir as principais obras em andamento, disponibilizar um canal de contato direto com clientes e fortalecer a presença digital da marca no setor da construção civil.
