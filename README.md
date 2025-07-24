@@ -1,6 +1,6 @@
 # 🏗️ Empreiteira LK — Site Institucional
 
-# Acesse o site por aqui -> [https://empreiteiralk.site/](Link)  
+# Acesse o site por aqui -> [Link](https://empreiteiralk.site/)  
 
 ## 📌 Propósito do Projeto
 
